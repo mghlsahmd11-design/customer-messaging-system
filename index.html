@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumina Dental | World-Class Dental Care</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <!-- Top Information Bar -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-left">
+          <a href="tel:+967772425089"><i data-lucide="phone" class="icon-sm"></i> +967 772425089</a>
+          <a href="tel:+967772425089" class="emergency"><i data-lucide="alert-circle" class="icon-sm"></i> Emergency: 24/7</a>
+          <span><i data-lucide="clock" class="icon-sm"></i> Mon-Sat: 8AM - 8PM</span>
+          <a href="mailto:ahmedalmghls050@gmail.com"><i data-lucide="mail" class="icon-sm"></i> ahmedalmghls050@gmail.com</a>
+        </div>
+        <div class="top-bar-right">
+          <div class="lang-switcher">
+            <i data-lucide="globe" class="icon-sm"></i> EN
+          </div>
+          <div class="socials">
+            <a href="#" aria-label="Facebook"><i data-lucide="facebook" class="icon-sm"></i></a>
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram" class="icon-sm"></i></a>
+            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin" class="icon-sm"></i></a>
+            <a href="#" aria-label="YouTube"><i data-lucide="youtube" class="icon-sm"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+      <div class="container">
+        <a href="/" class="logo">
+          <div class="logo-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
+          </div>
+          <span class="logo-text" style="background: linear-gradient(to right, var(--slate-900), var(--slate-600)); -webkit-background-clip: text; color: transparent;">LUXE<span style="color: var(--primary-blue);">DENT</span></span>
+        </a>
+        <nav class="desktop-nav">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#specialists">Specialists</a>
+          <a href="#gallery">Results</a>
+          <a href="#testimonials">Reviews</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a href="#contact" class="btn btn-primary" style="border-radius: 9999px;">Book Appointment</a>
+        <button class="mobile-menu-btn" id="mobile-menu-open" aria-label="Open menu">
+          <i data-lucide="menu" class="icon-md"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay" id="mobile-overlay"></div>
+    <div class="mobile-menu" id="mobile-menu">
+      <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close menu">
+        <i data-lucide="x" class="icon-md"></i>
+      </button>
+      <nav class="mobile-nav">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#specialists">Specialists</a>
+        <a href="#gallery">Results</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="btn btn-primary mt-4">Book Appointment</a>
+      </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-bg">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+      </div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-50 border border-slate-100 text-primary-blue text-[11px] font-bold uppercase tracking-wider" style="color: var(--primary-blue); border-radius: 9999px; border: 1px solid var(--slate-100); background: var(--slate-50); padding: 4px 12px; font-size: 0.65rem; margin-bottom: 16px;">
+            <span style="width: 8px; height: 8px; border-radius: 50%; background: var(--teal-accent); display: block;"></span> World-Class Dental Care
+          </div>
+          <h1 class="hero-title">Healthy Smiles <br><span style="color: var(--slate-500);">Begin Here.</span></h1>
+          <p class="hero-subtitle">Deliver world-class dental care using modern technology and experienced specialists in a comfortable environment.</p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-lg" style="background: var(--slate-900); color: white;">Get Started <i data-lucide="arrow-right" class="icon-sm"></i></a>
+            <a href="#gallery" class="btn btn-outline btn-lg">View Gallery</a>
+          </div>
+          <div class="hero-features">
+            <span class="feature"><i data-lucide="check-circle-2"></i> Free Consultation</span>
+            <span class="feature"><i data-lucide="check-circle-2"></i> Certified Dentists</span>
+            <span class="feature"><i data-lucide="check-circle-2"></i> Emergency Care</span>
+            <span class="feature"><i data-lucide="check-circle-2"></i> Latest Equipment</span>
+            <span class="feature"><i data-lucide="check-circle-2"></i> Pain Free Treatment</span>
+            <span class="feature"><i data-lucide="check-circle-2"></i> Affordable Pricing</span>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <div class="hero-image-container">
+             <img src="/hero-image.jpg" alt="Professional Dentist" class="hero-img">
+             
+             <div class="floating-card stats-card">
+                <div class="stats-icon"><i data-lucide="shield-check"></i></div>
+                <div class="stats-info">
+                  <h4 class="font-bold text-slate-900" style="margin: 0; font-size: 0.95rem;">Pain-Free Guarantee</h4>
+                  <span class="stats-text">Next-gen technology for zero discomfort.</span>
+                </div>
+             </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <span>Scroll Down</span>
+      </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="trust-badges">
+      <div class="container flex items-center justify-between">
+        <span style="font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: var(--slate-400);">Trusted By Industry Leaders</span>
+        <div class="badges-container" style="flex: 1; justify-content: flex-end;">
+          <div class="badge">ISO-CERTIFIED</div>
+          <div class="badge">FDA-APPROVED</div>
+          <div class="badge">SMILE-CO</div>
+          <div class="badge">HEALTH-TRUST</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Our Dental Services</span>
+          <h2 class="section-title">Complete Dental Care <br>For Every Smile</h2>
+          <p class="section-desc">We provide comprehensive dental solutions using modern technology and highly experienced specialists.</p>
+        </div>
+        
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="card-glow"></div>
+            <div class="service-icon"><i data-lucide="stethoscope"></i></div>
+            <h3>General Dentistry</h3>
+            <p>Comprehensive checkups, cleaning, and routine care to maintain your oral health.</p>
+            <ul class="service-benefits">
+              <li><i data-lucide="check"></i> Dental Cleaning</li>
+              <li><i data-lucide="check"></i> Cavity Fillings</li>
+            </ul>
+            <a href="#" class="btn btn-outline btn-sm">Learn More</a>
+          </div>
+
+          <div class="service-card">
+            <div class="card-glow"></div>
+            <div class="service-icon"><i data-lucide="sparkles"></i></div>
+            <h3>Teeth Whitening</h3>
+            <p>Professional whitening treatments for a brighter, more confident smile.</p>
+            <ul class="service-benefits">
+              <li><i data-lucide="check"></i> Laser Whitening</li>
+              <li><i data-lucide="check"></i> At-home kits</li>
+            </ul>
+            <a href="#" class="btn btn-outline btn-sm">Learn More</a>
+          </div>
+
+          <div class="service-card">
+            <div class="card-glow"></div>
+            <div class="service-icon"><i data-lucide="layers"></i></div>
+            <h3>Dental Implants</h3>
+            <p>Permanent, natural-looking replacements for missing teeth using titanium implants.</p>
+            <ul class="service-benefits">
+              <li><i data-lucide="check"></i> Single Implants</li>
+              <li><i data-lucide="check"></i> Full Mouth</li>
+            </ul>
+            <a href="#" class="btn btn-outline btn-sm">Learn More</a>
+          </div>
+
+          <div class="service-card">
+            <div class="card-glow"></div>
+            <div class="service-icon"><i data-lucide="smile"></i></div>
+            <h3>Orthodontics</h3>
+            <p>Straighten your teeth with modern braces or clear invisible aligners.</p>
+            <ul class="service-benefits">
+              <li><i data-lucide="check"></i> Invisible Aligners</li>
+              <li><i data-lucide="check"></i> Ceramic Braces</li>
+            </ul>
+            <a href="#" class="btn btn-outline btn-sm">Learn More</a>
+          </div>
+
+          <div class="service-card">
+            <div class="card-glow"></div>
+            <div class="service-icon"><i data-lucide="camera"></i></div>
+            <h3>Cosmetic Dentistry</h3>
+            <p>Enhance your smile's aesthetics with custom veneers and digital smile design.</p>
+            <ul class="service-benefits">
+              <li><i data-lucide="check"></i> Dental Veneers</li>
+              <li><i data-lucide="check"></i> Smile Makeover</li>
+            </ul>
+            <a href="#" class="btn btn-outline btn-sm">Learn More</a>
+          </div>
+
+          <div class="service-card">
+            <div class="card-glow"></div>
+            <div class="service-icon"><i data-lucide="zap"></i></div>
+            <h3>Root Canal</h3>
+            <p>Pain-free endodontic therapy to save infected or severely damaged teeth.</p>
+            <ul class="service-benefits">
+              <li><i data-lucide="check"></i> Pain-Free Procedure</li>
+              <li><i data-lucide="check"></i> Save Natural Teeth</li>
+            </ul>
+            <a href="#" class="btn btn-outline btn-sm">Learn More</a>
+          </div>
+
+          <div class="service-card">
+            <div class="card-glow"></div>
+            <div class="service-icon"><i data-lucide="baby"></i></div>
+            <h3>Pediatric Dentistry</h3>
+            <p>Gentle and friendly dental care specialized for children and toddlers.</p>
+            <ul class="service-benefits">
+              <li><i data-lucide="check"></i> Child-Friendly</li>
+              <li><i data-lucide="check"></i> Preventive Care</li>
+            </ul>
+            <a href="#" class="btn btn-outline btn-sm">Learn More</a>
+          </div>
+
+          <div class="service-card">
+            <div class="card-glow"></div>
+            <div class="service-icon"><i data-lucide="scissors"></i></div>
+            <h3>Oral Surgery</h3>
+            <p>Safe and professional surgical procedures including wisdom tooth removal.</p>
+            <ul class="service-benefits">
+              <li><i data-lucide="check"></i> Wisdom Teeth</li>
+              <li><i data-lucide="check"></i> Bone Grafting</li>
+            </ul>
+            <a href="#" class="btn btn-outline btn-sm">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Excellence in Care</span>
+          <h2 class="section-title">Why Patients Trust Our Clinic</h2>
+          <p class="section-desc">Experience world-class dental care with our team of specialists dedicated to your comfort and health.</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <i data-lucide="award"></i>
+            <h4>Experienced Dentists</h4>
+          </div>
+          <div class="feature-card">
+            <i data-lucide="cpu"></i>
+            <h4>Modern Equipment</h4>
+          </div>
+          <div class="feature-card">
+            <i data-lucide="smile"></i>
+            <h4>Pain-Free Procedures</h4>
+          </div>
+          <div class="feature-card">
+            <i data-lucide="dollar-sign"></i>
+            <h4>Affordable Prices</h4>
+          </div>
+          <div class="feature-card">
+            <i data-lucide="monitor"></i>
+            <h4>Digital Technology</h4>
+          </div>
+          <div class="feature-card">
+            <i data-lucide="heart"></i>
+            <h4>Personalized Care</h4>
+          </div>
+          <div class="feature-card">
+            <i data-lucide="phone-call"></i>
+            <h4>Emergency Support</h4>
+          </div>
+          <div class="feature-card">
+            <i data-lucide="shield"></i>
+            <h4>Sterile Environment</h4>
+          </div>
+          <div class="feature-card">
+            <i data-lucide="users"></i>
+            <h4>Friendly Staff</h4>
+          </div>
+          <div class="feature-card">
+            <i data-lucide="calendar"></i>
+            <h4>Flexible Scheduling</h4>
+          </div>
+          <div class="feature-card">
+            <i data-lucide="mouse-pointer"></i>
+            <h4>Online Booking</h4>
+          </div>
+          <div class="feature-card">
+            <i data-lucide="star"></i>
+            <h4>Premium Facilities</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section">
+      <div class="container stats-grid" id="stats">
+        <div class="stat-item">
+          <span class="stat-num"><span class="counter" data-target="10">0</span>+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num"><span class="counter" data-target="5000">0</span>+</span>
+          <span class="stat-label">Happy Patients</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num"><span class="counter" data-target="98">0</span>%</span>
+          <span class="stat-label">Patient Satisfaction</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">24/7</span>
+          <span class="stat-label">Emergency Support</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Before & After Section -->
+    <section id="gallery" class="before-after">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Real Smile Transformations</span>
+          <h2 class="section-title">Discover the amazing results<br>achieved by our patients.</h2>
+        </div>
+        
+        <div class="masonry-gallery">
+          <div class="gallery-item">
+            <div class="image-wrapper">
+              <img src="https://images.unsplash.com/photo-1590625686000-0e1d03099955?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Before and After">
+              <div class="overlay">
+                <div class="overlay-content">
+                  <h4>Dental Veneers</h4>
+                  <p>Dr. Sarah Jenkins • 2 Weeks</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="image-wrapper">
+              <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Before and After">
+              <div class="overlay">
+                <div class="overlay-content">
+                  <h4>Teeth Whitening</h4>
+                  <p>Dr. Emma Watson • 1 Session</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="image-wrapper">
+              <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Before and After">
+              <div class="overlay">
+                <div class="overlay-content">
+                  <h4>Invisalign</h4>
+                  <p>Dr. Michael Chen • 14 Months</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specialists Section -->
+    <section id="specialists" class="specialists">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Our Team</span>
+          <h2 class="section-title">Meet Our Specialists</h2>
+          <p class="section-desc">Highly qualified and experienced dental professionals dedicated to your smile.</p>
+        </div>
+        <div class="specialists-grid">
+          <div class="specialist-card">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Dr. Sarah Jenkins" class="specialist-img">
+            <div class="specialist-info">
+              <h3>Dr. Sarah Jenkins</h3>
+              <div class="specialist-role">Lead Orthodontist</div>
+              <p class="specialist-desc">Over 15 years of experience in modern orthodontics and Invisalign treatments.</p>
+              <div class="specialist-socials">
+                <a href="#"><i data-lucide="linkedin"></i></a>
+                <a href="#"><i data-lucide="twitter"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="specialist-card">
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Dr. Michael Chen" class="specialist-img">
+            <div class="specialist-info">
+              <h3>Dr. Michael Chen</h3>
+              <div class="specialist-role">Oral Surgeon</div>
+              <p class="specialist-desc">Specialized in complex extractions, dental implants, and reconstructive surgery.</p>
+              <div class="specialist-socials">
+                <a href="#"><i data-lucide="linkedin"></i></a>
+                <a href="#"><i data-lucide="twitter"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="specialist-card">
+            <img src="https://images.unsplash.com/photo-1594824436998-dded4b998188?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Dr. Emma Watson" class="specialist-img">
+            <div class="specialist-info">
+              <h3>Dr. Emma Watson</h3>
+              <div class="specialist-role">Cosmetic Dentist</div>
+              <p class="specialist-desc">Passionate about creating beautiful smiles with veneers and whitening procedures.</p>
+              <div class="specialist-socials">
+                <a href="#"><i data-lucide="linkedin"></i></a>
+                <a href="#"><i data-lucide="twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Patient Stories</span>
+          <h2 class="section-title">What They Say About Us</h2>
+          <p class="section-desc">Read testimonials from our happy patients and discover their transformation journeys.</p>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="stars">
+              <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+            </div>
+            <p class="testimonial-text">"I always had anxiety about visiting the dentist, but the team here made me feel incredibly comfortable. The pain-free procedure was exactly as promised. My new smile looks amazing!"</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Patient">
+              <div class="author-info">
+                <h4>Emily Thompson</h4>
+                <span>Cosmetic Patient</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">
+              <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+            </div>
+            <p class="testimonial-text">"Got my Invisalign treatment done with Dr. Sarah. The whole process was smooth, professional, and the results exceeded my expectations. Highly recommend this clinic to everyone."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Patient">
+              <div class="author-info">
+                <h4>James Wilson</h4>
+                <span>Orthodontics Patient</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">
+              <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+            </div>
+            <p class="testimonial-text">"Brought my 5-year-old son for his first checkup. The pediatric dentist was so gentle and fun, my son actually looks forward to his next visit! The facilities are incredibly clean and modern."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Patient">
+              <div class="author-info">
+                <h4>Linda Martinez</h4>
+                <span>Mother of Patient</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Common Questions</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-desc">Find answers to some of the most common questions our patients ask before their visit.</p>
+        </div>
+        <div class="faq-container">
+          <div class="faq-item">
+            <button class="faq-question">
+              Do you accept dental insurance?
+              <i data-lucide="chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, we accept most major dental insurance plans. Our administrative team will help you verify your coverage and maximize your benefits before any treatment begins. We also offer flexible financing options for out-of-pocket expenses.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              What should I expect on my first visit?
+              <i data-lucide="chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Your first visit includes a comprehensive oral examination, digital X-rays, and a consultation with your dentist to discuss your dental health goals. We'll create a personalized treatment plan tailored to your specific needs.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Do you offer emergency dental services?
+              <i data-lucide="chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Absolutely. We provide 24/7 emergency dental care. If you experience severe pain, a knocked-out tooth, or any other dental emergency, please call our emergency hotline immediately, and we'll arrange to see you as soon as possible.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              How often should I get a dental checkup?
+              <i data-lucide="chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>We recommend visiting the dentist for a routine checkup and professional cleaning at least every six months. However, depending on your specific oral health needs, your dentist may suggest more frequent visits.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section / Inquiries -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Get In Touch</span>
+          <h2 class="section-title">General Inquiries</h2>
+          <p class="section-desc">Have a question? We're here to help.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info-wrapper">
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+              <div class="contact-details">
+                <h4>Clinic Location</h4>
+                <p>123 Luxury Avenue, Suite 400<br>New York, NY 10001</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="phone"></i></div>
+              <div class="contact-details">
+                <h4>Call Us Directly</h4>
+                <p>Main: +967 772425089<br>Emergency: +967 772425089</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="mail"></i></div>
+              <div class="contact-details">
+                <h4>Email Address</h4>
+                <p>ahmedalmghls050@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="clock"></i></div>
+              <div class="contact-details">
+                <h4>Working Hours</h4>
+                <p>Monday - Saturday: 8:00 AM - 8:00 PM<br>Sunday: Emergency Only</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-form-wrapper">
+            <form class="contact-form" id="inquiry-form">
+              <input type="hidden" name="_subject" value="New General Inquiry from Website">
+              <input type="hidden" name="_template" value="table">
+              
+              <div id="success-message" style="display: none; padding: 16px; background-color: #10B981; color: white; border-radius: 8px; margin-bottom: 20px; font-weight: 500;">
+                Thank you! Your message has been sent successfully. We will get back to you soon.
+              </div>
+              <div id="error-message" style="display: none; padding: 16px; background-color: #EF4444; color: white; border-radius: 8px; margin-bottom: 20px; font-weight: 500;">
+                Something went wrong. Please try again later.
+              </div>
+
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="subject-input">Subject</label>
+                <input type="text" id="subject-input" name="User Subject" class="form-control" placeholder="How can we help?" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" class="form-control" placeholder="Type your message here..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg mt-4">Send Inquiry</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <a href="/" class="logo">
+              <div class="logo-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+              </div>
+              <span class="logo-text" style="color: var(--slate-900);">LUXE<span style="color: var(--primary-blue);">DENT</span></span>
+            </a>
+            <p class="mt-4">World-class dental care using modern technology and experienced specialists in a comfortable environment.</p>
+            <div class="socials mt-6">
+              <a href="#"><i data-lucide="facebook"></i></a>
+              <a href="#"><i data-lucide="instagram"></i></a>
+              <a href="#"><i data-lucide="linkedin"></i></a>
+              <a href="#"><i data-lucide="youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#">General Dentistry</a></li>
+              <li><a href="#">Cosmetic Dentistry</a></li>
+              <li><a href="#">Dental Implants</a></li>
+              <li><a href="#">Orthodontics</a></li>
+              <li><a href="#">Teeth Whitening</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Clinic</h4>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#specialists">Our Specialists</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact Info</h4>
+            <ul class="contact-list">
+              <li><i data-lucide="map-pin"></i> 123 Luxury Avenue, NY 10001</li>
+              <li><i data-lucide="phone"></i> +967 772425089</li>
+              <li><i data-lucide="mail"></i> ahmedalmghls050@gmail.com</li>
+              <li><i data-lucide="clock"></i> Mon-Sat: 8:00 AM - 8:00 PM</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 LuxeDent Clinic. All rights reserved. Designed for excellence.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/967772425089" target="_blank" class="floating-whatsapp" aria-label="Chat with us on WhatsApp">
+      <div class="whatsapp-icon-wrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="35" height="35" fill="white">
+          <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+        </svg>
+      </div>
+      <span class="whatsapp-text">WhatsApp</span>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>
+
