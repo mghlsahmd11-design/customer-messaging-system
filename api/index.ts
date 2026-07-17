@@ -4,7 +4,7 @@ import { getAuth } from 'firebase-admin/auth';
 import nodemailer from 'nodemailer';
 
 export const config = {
-  runtime: 'nodejs20.x',
+  runtime: 'nodejs',
 };
 
 if (!getApps().length) {
