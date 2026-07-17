@@ -2,9 +2,21 @@
   "version": 2,
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/index.ts" },
-    { "source": "/admin", "destination": "/admin.html" },
-    { "source": "/admin/(.*)", "destination": "/admin.html" },
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index.ts"
+    },
+    {
+      "source": "/admin",
+      "destination": "/admin.html"
+    },
+    {
+      "source": "/admin/(.*)",
+      "destination": "/admin.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
   ]
 }
