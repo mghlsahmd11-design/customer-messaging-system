@@ -4,12 +4,9 @@ import { getAuth } from 'firebase-admin/auth';
 import nodemailer from 'nodemailer';
 
 export const config = {
-  export const config = {
   runtime: 'nodejs20.x',
 };
-};
 
-// Initialize Firebase Admin
 if (!getApps().length) {
   try {
     initializeApp({
