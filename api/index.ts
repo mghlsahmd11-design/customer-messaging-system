@@ -1,40 +1,40 @@
+import express from 'express';
+import { initializeApp, getApps } from 'firebase-admin/app';
 import { getAuth } from 'firebase-admin/auth';
 import nodemailer from 'nodemailer';
-import admin from 'firebase-admin';
-import fs from 'fs';
-import path from 'path';
 
-if (!admin.apps.length) {
+export const config = {
+  runtime: 'nodejs',
+};
+
+// Initialize Firebase Admin
+if (!getApps().length) {
   try {
-    const configPath = path.resolve(process.cwd(), 'firebase-applet-config.json');
-    let projectId = process.env.VITE_FIREBASE_PROJECT_ID || process.env.FIREBASE_PROJECT_ID;
-    
-    if (!projectId && fs.existsSync(configPath)) {
-      const config = JSON.parse(fs.readFileSync(configPath, 'utf-8'));
-      projectId = config.projectId;
-    }
-    
-    admin.initializeApp({ projectId });
+    initializeApp({
+      projectId: process.env.VITE_FIREBASE_PROJECT_ID || process.env.FIREBASE_PROJECT_ID || 'dummy-project-id'
+    });
   } catch (e) {
-    console.error('Firebase admin init error', e);
+    console.error('Firebase admin init error:', e);
   }
 }
 
-export default async function handler(req, res) {
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' });
-  }
+const app = express();
 
+// Middleware to parse JSON
+app.use(express.json());
+
+// API endpoint
+app.post(['/send-email', '/api/send-email'], async (req, res) => {
   const authHeader = req.headers.authorization;
   if (!authHeader || !authHeader.startsWith('Bearer ')) {
     return res.status(401).json({ error: 'Unauthorized' });
   }
-
+  
   const idToken = authHeader.split('Bearer ')[1];
   try {
-    const decodedToken = await getAuth().verifyIdToken(idToken);
+    await getAuth().verifyIdToken(idToken);
   } catch (error) {
-    console.error('Error verifying auth token', error);
+    console.error('Error verifying auth token:', error);
     return res.status(401).json({ error: 'Unauthorized' });
   }
 
@@ -69,8 +69,10 @@ export default async function handler(req, res) {
 
     await transporter.sendMail(mailOptions);
     res.status(200).json({ success: true });
-  } catch (error) {
+  } catch (error: any) {
     console.error('Error sending email:', error);
     res.status(500).json({ error: error.message || 'Failed to send email' });
   }
-}
+});
+
+export default app;

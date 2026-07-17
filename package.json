@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "tsx server.ts",
-    "build": "vite build && esbuild server.ts --bundle --platform=node --format=esm --packages=external --sourcemap --outfile=dist/server.js",
-    "start": "node dist/server.js",
+    "build": "vite build && esbuild server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --outfile=dist/server.cjs",
+    "start": "node dist/server.cjs",
     "preview": "vite preview",
     "clean": "rm -rf dist server.js",
     "lint": "echo 'No TS to lint'"
@@ -18,13 +18,15 @@
     "dotenv": "^17.2.3",
     "express": "^4.21.2",
     "firebase": "^12.16.0",
-    "firebase-admin": "^13.4.0",
+    "firebase-admin": "^14.1.0",
     "lucide-react": "^1.24.0",
     "motion": "^12.23.24",
     "nodemailer": "^9.0.3",
     "react": "^19.0.1",
     "react-dom": "^19.0.1",
-    "vite": "^6.2.3"
+    "vite": "^6.2.3",
+    "jose": "^5.2.0",
+    "jwks-rsa": "^3.1.0"
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
@@ -35,7 +37,13 @@
     "react-router-dom": "^7.18.1",
     "tailwindcss": "^4.1.14",
     "tsx": "^4.21.0",
-    "typescript": "~5.8.2",
-    "vite": "^6.2.3"
+    "typescript": "~5.8.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "overrides": {
+    "jose": "^5.2.0",
+    "jwks-rsa": "^3.1.0"
   }
 }
