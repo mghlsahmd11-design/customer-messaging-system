@@ -4,7 +4,9 @@ import { getAuth } from 'firebase-admin/auth';
 import nodemailer from 'nodemailer';
 
 export const config = {
-  runtime: 'nodejs',
+  export const config = {
+  runtime: 'nodejs20.x',
+};
 };
 
 // Initialize Firebase Admin
@@ -24,7 +26,7 @@ const app = express();
 app.use(express.json());
 
 // API endpoint
-app.post(['/send-email', '/api/send-email'], async (req, res) => {
+app.post('/send-email', async (req, res) => {
   const authHeader = req.headers.authorization;
   if (!authHeader || !authHeader.startsWith('Bearer ')) {
     return res.status(401).json({ error: 'Unauthorized' });
